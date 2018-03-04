@@ -32,5 +32,9 @@ public class JaxService {
         return getProductsEntity().create(product);
     }
 
+    public Product updateProdct(Product product){
+        return getProductsEntity().update(product);
+    }
+
 
 }

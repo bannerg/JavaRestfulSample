@@ -39,4 +39,10 @@ public class ProductsResource {
     public Product createProduct(Product product){
         return jaxService.createProduct(product);
     }
+
+    @PUT
+    @Produces(MediaType.APPLICATION_JSON)
+    public Product updateProduct(Product product){
+        return jaxService.updateProdct(product);
+    }
 }

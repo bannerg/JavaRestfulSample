@@ -56,4 +56,16 @@ public class ProductsEntity {
     public Product create(int id, String name, int stock){
         return create(new Product(id, name, stock));
     }
+
+    public Product update(Product product){
+        if (findById(product.getId()) == null) return null;
+        for (int i = 0; i < getProducts().size(); i++){
+            if (getProducts().get(i).getId() == product.getId()){
+                getProducts().get(i).setName(product.getName());
+                getProducts().get(i).setStock(product.getStock());
+                return getProducts().get(i);
+            }
+        }
+        return null;
+    }
 }
