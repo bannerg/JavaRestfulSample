@@ -1,14 +1,14 @@
 package pe.edu.utp.javarestfulsample.models;
 
-public class ProductsClass {
+public class Product {
     private int id;
     private String name;
     private int stock;
 
-    public ProductsClass() {
+    public Product() {
     }
 
-    public ProductsClass(int id, String name, int stock) {
+    public Product(int id, String name, int stock) {
         this.id = id;
         this.name = name;
         this.stock = stock;
