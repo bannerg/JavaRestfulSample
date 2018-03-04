@@ -19,4 +19,18 @@ public class JaxService {
     public Product findProductById(int id){
         return getProductsEntity().findById(id);
     }
+
+    public Product findProductByName(String name){
+        return getProductsEntity().findByName(name);
+    }
+
+    public boolean deleteProductById(int id){
+        return getProductsEntity().deleteById(id);
+    }
+
+    public Product createProduct(Product product){
+        return getProductsEntity().create(product);
+    }
+
+
 }
