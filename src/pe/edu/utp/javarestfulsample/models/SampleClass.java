@@ -1,6 +1,11 @@
 package pe.edu.utp.javarestfulsample.models;
 
 public class SampleClass {
+    /*
+    * Developed by Banner Gonzales BG001
+    * We use: Web Application, CDI, JSON Binding, RESTful Service Plugins
+    *
+    * */
     private String firstName;
     private String lastName;
 

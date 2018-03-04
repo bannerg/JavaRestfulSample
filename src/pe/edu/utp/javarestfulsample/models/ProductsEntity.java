@@ -10,9 +10,9 @@ public class ProductsEntity {
     public List<Product> getProducts(){
         if (products == null){
             products = new ArrayList<>();
-            for (int i=1; i < 11; i++){
+            for (int i= 1; i < 11; i++){
                 int stock = (int) (Math.random()*100)+1;
-                products.add(new Product((i+1),"Product: "+i, stock));
+                products.add(new Product(i,"Product: "+i, stock));
             }
         }
         return products;
